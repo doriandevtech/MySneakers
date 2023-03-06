@@ -42,7 +42,7 @@
                                     <constraint firstAttribute="height" constant="34" id="Wwz-oN-IOO"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Ville"/>
+                                    <segment title="City"/>
                                     <segment title="Running"/>
                                     <segment title="Baskets"/>
                                 </segments>
@@ -79,7 +79,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="31n-EH-R9F">
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="40" minimumValue="35" maximumValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="31n-EH-R9F">
                                         <rect key="frame" x="256" y="0.0" width="94" height="34"/>
                                         <connections>
                                             <action selector="sizeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="mxQ-OD-bUt"/>
