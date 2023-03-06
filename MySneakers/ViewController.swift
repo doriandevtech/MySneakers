@@ -88,6 +88,14 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     var pickerColors: [String] {
         return ["White"]
     }
+    
+    // Setu up color picker
+    func setUpPicker() {
+        colorPicker.delegate = self
+        colorPicker.dataSoirce = self
+    }
+    
+    
 }
 
 
