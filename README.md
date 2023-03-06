@@ -20,7 +20,7 @@
 - TextField
 
 
-## Here are some screenshots of my app ⤵️
+## Here the screenshot of my app ⤵️
 
 ### Home Page view:
 
