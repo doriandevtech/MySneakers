@@ -30,7 +30,15 @@ class ViewController: UIViewController {
     var name: String = ""
     
     var typeNumber: Int = 0
-    var type: String = ""
+    var type: String = "City"
+    
+    var color: String = "White"
+    
+    var gender: String = "Homme"
+    
+    var size: String = ""
+    
+    var orderResultText: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +52,10 @@ class ViewController: UIViewController {
         showGenderLabel()
         
         setUpPicker()
+        
+        updateShoeImage()
+        
+        orderResult.text = ""
     }
     
 //    Close Simulator keyboard when pressed "return" key
@@ -52,21 +64,37 @@ class ViewController: UIViewController {
     }
     
     func showGenderLabel() {
-        genderLbl.text = genderSwitch.isOn ? "Homme" : "Femme"
+        genderLbl.text = genderSwitch.isOn ? "Boy" : "Girl"
+        gender = genderLbl.text ?? ""
+        updateShoeImage()
     }
     
     func showSizeValue() {
         sizeLbl.text = String(Int(sizeStepper.value))
+        size = sizeLbl.text ?? ""
+        updateShoeImage()
     }
     
-    func getShoeParams(type: Int, gender: String, color: String) {
+    func getShoeParams(type: String, gender: String, color: String) -> String {
         
+        let typeParam: String = type.lowercased()
+        let genderParam: String = gender.lowercased()
+        let colorParam: String = color.lowercased()
+        
+        return "\(genderParam)_\(typeParam)_\(colorParam)"
     }
     
-//    @IBAction func nameTFPressed(_ sender: UITextField) {
-//        print(sender.text ?? "")
-//    }
+    func updateShoeImage() {
+        shoeSelection.image = UIImage(named: getShoeParams(type: type, gender: genderLbl.text ?? "", color: color))
+    }
     
+    func updateOrderResult() {
+        orderResult.text = """
+            Hello \(name) I found this pair of \(type.lowercased()) shoes in \(color.lowercased()) size \(sizeLbl.text?.lowercased() ?? "")
+        """
+    }
+    
+//    SegmentedControl pressed
     @IBAction func shoeTypePressed(_ sender: UISegmentedControl) {
         typeNumber = sender.selectedSegmentIndex
         if typeNumber == 0 {
@@ -74,29 +102,40 @@ class ViewController: UIViewController {
         } else if typeNumber == 1 {
             type = "Running"
         } else {
-            type = "Baskets"
+            type = "Basket"
         }
+        updateShoeImage()
+        updateOrderResult()
     }
     
-    
+//    Switch pressed
     @IBAction func genderPressed(_ sender: UISwitch) {
         showGenderLabel()
+        updateShoeImage()
+        updateOrderResult()
     }
     
+//    Stepper pressed
     @IBAction func sizeChanged(_ sender: UIStepper) {
         showSizeValue()
+        updateShoeImage()
+        updateOrderResult()
     }
-    
-    
     
 }
 
 extension ViewController: UITextFieldDelegate {
     
+//    Hide keyboard when "return" is pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
 //    Verify if the name has been entered
     func textFieldDidChangeSelection(_ textField: UITextField) {
         name = textField.text ?? ""
         print(name)
+        updateOrderResult()
     }
 }
 
@@ -131,6 +170,9 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 //    Access selected row's content
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print(pickerColors[row])
+        color = pickerColors[row]
+        updateShoeImage()
+        updateOrderResult()
     }
     
     
