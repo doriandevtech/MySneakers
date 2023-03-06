@@ -39,6 +39,8 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
         
         nameTF.delegate = self
+        
+        setUpPicker()
     }
     
 //    Close Simulator keyboard when pressed "return" key
@@ -86,7 +88,7 @@ extension ViewController: UITextFieldDelegate {
 
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     var pickerColors: [String] {
-        return ["White"]
+        return ["White", "Black"]
     }
     
     // Setu up color picker
