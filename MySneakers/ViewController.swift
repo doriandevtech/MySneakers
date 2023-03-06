@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         nameTF.delegate = self
     }
     
-//    CLose Simulator keyboard when pressed "return" key
+//    Close Simulator keyboard when pressed "return" key
     @objc func hideKeyboard() {
         view.endEditing(true)
     }
