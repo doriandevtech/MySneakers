@@ -28,16 +28,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var orderResult: UILabel!
     
     var name: String = ""
-    
     var typeNumber: Int = 0
     var type: String = "City"
-    
     var color: String = "White"
-    
     var gender: String = "Homme"
-    
     var size: String = ""
-    
     var orderResultText: String = ""
     
     override func viewDidLoad() {
@@ -46,16 +41,17 @@ class ViewController: UIViewController {
 //        Add closing keyboard gesture
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
         
-        nameTF.delegate = self
+        nameTF.delegate = self // Allows nameTF to have textFieldDelegate as an extension
         
+//        Sets the first UI's display
         showSizeValue()
         showGenderLabel()
+        updateShoeImage()
+        orderResult.text = ""
         
+//        Sets up the PickerView
         setUpPicker()
         
-        updateShoeImage()
-        
-        orderResult.text = ""
     }
     
 //    Close Simulator keyboard when pressed "return" key
@@ -63,18 +59,21 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
+//    Updates in real time the gender displayed on screen
     func showGenderLabel() {
         genderLbl.text = genderSwitch.isOn ? "Boy" : "Girl"
         gender = genderLbl.text ?? ""
         updateShoeImage()
     }
     
+//    Updates in real time the shoe size displayed on screen
     func showSizeValue() {
         sizeLbl.text = String(Int(sizeStepper.value))
         size = sizeLbl.text ?? ""
         updateShoeImage()
     }
     
+//    Constructs the name of the image filename that the UIImage will point to
     func getShoeParams(type: String, gender: String, color: String) -> String {
         
         let typeParam: String = type.lowercased()
@@ -84,10 +83,12 @@ class ViewController: UIViewController {
         return "\(genderParam)_\(typeParam)_\(colorParam)"
     }
     
+//    Updates the shoe image's shown
     func updateShoeImage() {
         shoeSelection.image = UIImage(named: getShoeParams(type: type, gender: genderLbl.text ?? "", color: color))
     }
     
+//    Sets the value of the text displayed on the UI regarding the parameters
     func updateOrderResult() {
         orderResult.text = """
             Hello \(name) I found this pair of \(type.lowercased()) shoes in \(color.lowercased()) size \(sizeLbl.text?.lowercased() ?? "")
@@ -96,7 +97,7 @@ class ViewController: UIViewController {
     
 //    SegmentedControl pressed
     @IBAction func shoeTypePressed(_ sender: UISegmentedControl) {
-        typeNumber = sender.selectedSegmentIndex
+        typeNumber = sender.selectedSegmentIndex // Assign the selected segment's index to typeNumber variable
         if typeNumber == 0 {
             type = "City"
         } else if typeNumber == 1 {
@@ -104,22 +105,23 @@ class ViewController: UIViewController {
         } else {
             type = "Basket"
         }
-        updateShoeImage()
-        updateOrderResult()
+        
+        updateShoeImage() // Update the shoe image if type is pressed
+        updateOrderResult() // Update order result's message when a type is pressed
     }
     
 //    Switch pressed
     @IBAction func genderPressed(_ sender: UISwitch) {
         showGenderLabel()
-        updateShoeImage()
-        updateOrderResult()
+        updateShoeImage() // Update the shoe image if gender is pressed
+        updateOrderResult() // Update order result's message when gender is pressed
     }
     
 //    Stepper pressed
     @IBAction func sizeChanged(_ sender: UIStepper) {
         showSizeValue()
-        updateShoeImage()
-        updateOrderResult()
+        updateShoeImage() // Update the shoe image if size is pressed
+        updateOrderResult() // Update order result's message when size is pressed
     }
     
 }
@@ -133,8 +135,6 @@ extension ViewController: UITextFieldDelegate {
     
 //    Verify if the name has been entered
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        name = textField.text ?? ""
-        print(name)
         updateOrderResult()
     }
 }
@@ -171,8 +171,8 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print(pickerColors[row])
         color = pickerColors[row]
-        updateShoeImage()
-        updateOrderResult()
+        updateShoeImage() // Update the shoe image if item is selected
+        updateOrderResult() // Update order result's message when item is selected
     }
     
     
