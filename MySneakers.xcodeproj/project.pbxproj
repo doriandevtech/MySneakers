@@ -24,6 +24,7 @@
 		F41BFFBC29B3562900C87D24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F41BFFBF29B3562900C87D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F41BFFC129B3562900C87D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B915F329B69DA500D448EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		F41BFFA729B3562800C87D24 = {
 			isa = PBXGroup;
 			children = (
+				F4B915F329B69DA500D448EB /* README.md */,
 				F41BFFB229B3562800C87D24 /* MySneakers */,
 				F41BFFB129B3562800C87D24 /* Products */,
 			);
