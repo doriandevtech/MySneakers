@@ -83,3 +83,17 @@ extension ViewController: UITextFieldDelegate {
         print(name)
     }
 }
+
+extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    var pickerColors: [String] {
+        return ["White"]
+    }
+}
+
+
+
+
+
+
+
+
