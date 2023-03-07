@@ -33,7 +33,6 @@ class ViewController: UIViewController {
     var color: String = "White"
     var gender: String = "Homme"
     var size: String = ""
-    var orderResultText: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +89,13 @@ class ViewController: UIViewController {
     
 //    Sets the value of the text displayed on the UI regarding the parameters
     func updateOrderResult() {
+        if name == "" || name == "Mr." || name == "Miss" {
+            if gender == "Boy" {
+                name = "Mr."
+            } else if gender == "Girl"{
+                name = "Miss"
+            }
+        }
         orderResult.text = """
             Hello \(name) I found this pair of \(type.lowercased()) shoes in \(color.lowercased()) size \(sizeLbl.text?.lowercased() ?? "")
         """
@@ -135,6 +141,7 @@ extension ViewController: UITextFieldDelegate {
     
 //    Verify if the name has been entered
     func textFieldDidChangeSelection(_ textField: UITextField) {
+        name = textField.text ?? ""
         updateOrderResult()
     }
 }
