@@ -24,4 +24,4 @@
 
 ### Home Page view:
 
-<img width="365" alt="Capture d’écran 2023-03-06 à 11 25 16 PM" src="https://user-images.githubusercontent.com/61510923/223258426-61fd1bfa-5fe0-4eec-afe3-707f8e1a2ab9.png">
+<img width="331" alt="Capture d’écran 2023-03-07 à 11 54 20 PM" src="https://user-images.githubusercontent.com/61510923/223572751-6e1ae385-1504-467e-8ae3-cc76bb1c10ce.png">
