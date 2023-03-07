@@ -132,6 +132,7 @@ class ViewController: UIViewController {
     
 }
 
+//Extension for TextFieldDelegate
 extension ViewController: UITextFieldDelegate {
     
 //    Hide keyboard when "return" is pressed
@@ -146,11 +147,12 @@ extension ViewController: UITextFieldDelegate {
     }
 }
 
+//Extension for PickerViewDelegate & PickerViewDataSource
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
 //    Declare picker possible outcome
     var pickerColors: [String] {
-        return ["White", "Black"]
+        return ["White", "Black", "Green", "Blue", "Red"]
     }
     
 //    Setup color picker
