@@ -14,7 +14,9 @@ class ViewControllerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        sut = ViewController()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        sut = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        sut.loadViewIfNeeded()
     }
     
     override func tearDown() {
@@ -29,6 +31,13 @@ class ViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.color, "Color should not be nil.")
         XCTAssertNotNil(sut.gender, "Gender should not be nil.")
         XCTAssertNotNil(sut.size, "Size should not be nil.")
+    }
+    
+    func testGenderButton_ShouldUpdateLabelWhenIsOff() {
+        _ = sut.genderSwitch.isOn
+        sut.genderSwitch.sendActions(for: .valueChanged)
+        XCTAssertEqual(sut.genderLbl.text, "Boy")
+        
     }
 
 }
