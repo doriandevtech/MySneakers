@@ -18,7 +18,13 @@
 - Switch
 - SegmentedControl
 - TextField
+- XCTestCase
 
+## Current state :
+- The app is developped and usable (as shown in the screenshot below👇).
+
+## Next steps :
+- I am working on including Unit Tests, using XCTestCase tools.
 
 ## Here the screenshot of my app ⤵️
 
