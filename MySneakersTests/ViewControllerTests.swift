@@ -37,7 +37,10 @@ class ViewControllerTests: XCTestCase {
         _ = sut.genderSwitch.isOn
         sut.genderSwitch.sendActions(for: .valueChanged)
         XCTAssertEqual(sut.genderLbl.text, "Boy")
-        
+    }
+    
+    func testSizeLabel_ShouldNotBeNil() {
+        XCTAssetNotNil(sut.sizeLbl.text, "sizeLbl should not be nil")
     }
 
 }
