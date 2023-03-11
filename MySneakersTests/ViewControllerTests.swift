@@ -51,12 +51,12 @@ class ViewControllerTests: XCTestCase {
     
     func testShoeTypeValue_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssetNotNil(sut.type, "type should not be nil")
-        XCTAssertEqual(sut.type, "city", "type should equal \"Boy\" at app'a launch")
+        XCTAssertEqual(sut.type, "city", "type should equal \"city\" at app'a launch")
     }
 
     func testColorPockerValue_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssetNotNil(sut.color, "color should not be nil")
-        XCTAssertEqual(sut.color, "White", "color should equal \"Boy\" at app'a launch")
+        XCTAssertEqual(sut.color, "White", "color should equal \"White\" at app'a launch")
     }
 
 }
