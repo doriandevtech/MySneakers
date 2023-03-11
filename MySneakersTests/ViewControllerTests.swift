@@ -48,5 +48,11 @@ class ViewControllerTests: XCTestCase {
         XCTAssetNotNil(sut.genderLbl.text, "genderLbl should not be nil")
         XCTAssertEqual(sut.genderLbl.text, "Boy", "genderLbl should equal \"Boy\" at app'a launch")
     }
+    
+    func testShoeTypeValue_ShouldNotBeNilAndShouldEqualValue() {
+        XCTAssetNotNil(sut.type, "type should not be nil")
+        XCTAssertEqual(sut.type, "city", "type should equal \"Boy\" at app'a launch")
+    }
+
 
 }
