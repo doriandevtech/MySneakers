@@ -54,5 +54,9 @@ class ViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.type, "city", "type should equal \"Boy\" at app'a launch")
     }
 
+    func testColorPockerValue_ShouldNotBeNilAndShouldEqualValue() {
+        XCTAssetNotNil(sut.color, "color should not be nil")
+        XCTAssertEqual(sut.color, "White", "color should equal \"Boy\" at app'a launch")
+    }
 
 }
