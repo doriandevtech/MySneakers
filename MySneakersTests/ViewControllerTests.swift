@@ -58,5 +58,10 @@ class ViewControllerTests: XCTestCase {
         XCTAssetNotNil(sut.color, "color should not be nil")
         XCTAssertEqual(sut.color, "White", "color should equal \"White\" at app'a launch")
     }
+    
+    func testShoeImage_ShouldNotBeNil() {
+        XCTAssetNotNil(sut.shoeSelection.image, "shoeImage should not be nil")
+        
+    }
 
 }
