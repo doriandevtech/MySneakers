@@ -12,14 +12,14 @@ class ViewControllerTests: XCTestCase {
     
     var sut: ViewController!
     
-    override func setUp() {
+    override func setUpWithError() throws {
         super.setUp()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         sut = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
         sut.loadViewIfNeeded()
     }
     
-    override func tearDown() {
+    override func tearDownWithError() throws {
         sut = nil
         super.tearDown()
     }
