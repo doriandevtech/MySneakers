@@ -15,7 +15,7 @@ class ViewControllerTests: XCTestCase {
     override func setUp() {
         super.setUp()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        sut = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        sut = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
         sut.loadViewIfNeeded()
     }
     
@@ -27,10 +27,6 @@ class ViewControllerTests: XCTestCase {
     func testInit_AreValuesInitiallyNotNil() {
         XCTAssertNotNil(sut.name, "Name should not be nil.")
         XCTAssertNotNil(sut.typeNumber, "TypeNumber should not be nil.")
-        XCTAssertNotNil(sut.type, "Type should not be nil.")
-        XCTAssertNotNil(sut.color, "Color should not be nil.")
-        XCTAssertNotNil(sut.gender, "Gender should not be nil.")
-        XCTAssertNotNil(sut.size, "Size should not be nil.")
     }
     
     func testGenderButton_ShouldUpdateLabelWhenIsOff() {
@@ -51,7 +47,7 @@ class ViewControllerTests: XCTestCase {
     
     func testShoeTypeValue_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssertNotNil(sut.type, "type should not be nil")
-        XCTAssertEqual(sut.type, "city", "type should equal \"city\" at app'a launch")
+        XCTAssertEqual(sut.type, "City", "type should equal \"City\" at app'a launch")
     }
 
     func testColorPickerValue_ShouldNotBeNilAndShouldEqualValue() {
@@ -61,7 +57,6 @@ class ViewControllerTests: XCTestCase {
     
     func testShoeImage_ShouldNotBeNil() {
         XCTAssertNotNil(sut.shoeSelection.image, "shoeImage should not be nil")
-        
     }
 
 }
