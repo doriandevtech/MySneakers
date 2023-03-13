@@ -37,22 +37,22 @@ class ViewControllerTests: XCTestCase {
     
     func testSizeLabel_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssertNotNil(sut.sizeLbl.text, "sizeLbl should not be nil")
-        XCTAssertEqual(sut.sizeLbl.text, "40", "sizeLbl should equal 40 at app'a launch")
+        XCTAssertEqual(sut.sizeLbl.text, "40", "sizeLbl should equal 40 at app launch")
     }
     
     func testGenderLabel_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssertNotNil(sut.genderLbl.text, "genderLbl should not be nil")
-        XCTAssertEqual(sut.genderLbl.text, "Boy", "genderLbl should equal \"Boy\" at app'a launch")
+        XCTAssertEqual(sut.genderLbl.text, "Boy", "genderLbl should equal \"Boy\" at app launch")
     }
     
     func testShoeTypeValue_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssertNotNil(sut.type, "type should not be nil")
-        XCTAssertEqual(sut.type, "City", "type should equal \"City\" at app'a launch")
+        XCTAssertEqual(sut.type, "City", "type should equal \"City\" at app launch")
     }
 
     func testColorPickerValue_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssertNotNil(sut.color, "color should not be nil")
-        XCTAssertEqual(sut.color, "White", "color should equal \"White\" at app'a launch")
+        XCTAssertEqual(sut.color, "White", "color should equal \"White\" at app launch")
     }
     
     func testShoeImage_ShouldNotBeNil() {
