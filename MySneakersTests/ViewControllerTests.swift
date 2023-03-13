@@ -58,5 +58,8 @@ class ViewControllerTests: XCTestCase {
     func testShoeImage_ShouldNotBeNil() {
         XCTAssertNotNil(sut.shoeSelection.image, "shoeImage should not be nil")
     }
-
+    
+    func testOrderResult_ShouldBeEmptyAtLaunch() {
+        XCTAssertEqual(sut.orderResult.text, "", "orderResult should be equal to \"\" at app launch")
+    }
 }
