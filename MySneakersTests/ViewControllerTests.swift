@@ -36,7 +36,7 @@ class ViewControllerTests: XCTestCase {
     
     func testSizeLabel_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssertNotNil(sut.sizeLbl.text, "\(String(describing: sut.sizeLbl.text)) should not be nil")
-        XCTAssertEqual(sut.sizeLbl.text, "35", "\(String(describing: sut.sizeLbl.text)) should equal to \"35\" at app launch")
+        XCTAssertEqual(sut.sizeLbl.text, "40", "\(String(describing: sut.sizeLbl.text)) should equal to \"40\" at app launch")
     }
     
     func testGenderLabel_ShouldNotBeNilAndShouldEqualValue() {
