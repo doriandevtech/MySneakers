@@ -29,12 +29,6 @@ class ViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.typeNumber, "\(sut.typeNumber) should not be nil.")
     }
     
-    func testGenderButton_ShouldUpdateLabelWhenIsOff() {
-        _ = sut.genderSwitch.isOn
-        sut.genderSwitch.sendActions(for: .valueChanged)
-        XCTAssertEqual(sut.genderLbl.text, "Boy")
-    }
-    
     func testTitleLabel_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssertNotNil(sut.titleLbl.text, "\(String(describing: sut.titleLbl.text)) should not be nil")
         XCTAssertEqual(sut.titleLbl.text, "My Sneakers")
@@ -66,5 +60,11 @@ class ViewControllerTests: XCTestCase {
     
     func testOrderResult_ShouldBeEmptyAtLaunch() {
         XCTAssertEqual(sut.orderResult.text, "", "\(String(describing: sut.orderResult.text)) should be equal to \"\" at app launch")
+    }
+    
+    func testGenderButton_ShouldUpdateValueWhenPressed() {
+        sut.genderSwitch.isOn = true
+        sut.genderSwitch.sendActions(for: .valueChanged)
+        XCTAssertEqual(sut.genderSwitch.isOn, false, "\(sut.genderSwitch.isOn) should be equal to false")
     }
 }
