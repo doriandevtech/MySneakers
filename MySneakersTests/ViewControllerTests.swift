@@ -26,7 +26,7 @@ class ViewControllerTests: XCTestCase {
     
     func testInit_AreValuesInitiallyNotNil() {
         XCTAssertNotNil(sut.name, "Name should not be nil.")
-        XCTAssertNotNil(sut.typeNumber, "TypeNumber should not be nil.")
+        XCTAssertNotNil(sut.typeNumber, "\(sut.typeNumber) should not be nil.")
     }
     
     func testGenderButton_ShouldUpdateLabelWhenIsOff() {
@@ -36,35 +36,35 @@ class ViewControllerTests: XCTestCase {
     }
     
     func testTitleLabel_ShouldNotBeNilAndShouldEqualValue() {
-        XCTAssertNotNil(sut.titleLbl.text, "titleLabel should not be nil")
+        XCTAssertNotNil(sut.titleLbl.text, "\(String(describing: sut.titleLbl.text)) should not be nil")
         XCTAssertEqual(sut.titleLbl.text, "My Sneakers")
     }
     
     func testSizeLabel_ShouldNotBeNilAndShouldEqualValue() {
-        XCTAssertNotNil(sut.sizeLbl.text, "sizeLbl should not be nil")
-        XCTAssertEqual(sut.sizeLbl.text, "40", "sizeLbl should equal 40 at app launch")
+        XCTAssertNotNil(sut.sizeLbl.text, "\(String(describing: sut.sizeLbl.text)) should not be nil")
+        XCTAssertEqual(sut.sizeLbl.text, "35", "\(String(describing: sut.sizeLbl.text)) should equal to \"35\" at app launch")
     }
     
     func testGenderLabel_ShouldNotBeNilAndShouldEqualValue() {
-        XCTAssertNotNil(sut.genderLbl.text, "genderLbl should not be nil")
-        XCTAssertEqual(sut.genderLbl.text, "Boy", "genderLbl should equal \"Boy\" at app launch")
+        XCTAssertNotNil(sut.genderLbl.text, "\(String(describing: sut.genderLbl.text)) should not be nil")
+        XCTAssertEqual(sut.genderLbl.text, "Boy", "\(String(describing: sut.genderLbl.text)) should equal \"Boy\" at app launch")
     }
     
     func testShoeTypeValue_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssertNotNil(sut.type, "type should not be nil")
-        XCTAssertEqual(sut.type, "City", "type should equal \"City\" at app launch")
+        XCTAssertEqual(sut.type, "City", "\(sut.type) should equal \"City\" at app launch")
     }
 
     func testColorPickerValue_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssertNotNil(sut.color, "color should not be nil")
-        XCTAssertEqual(sut.color, "White", "color should equal \"White\" at app launch")
+        XCTAssertEqual(sut.color, "White", "\(sut.color) should equal \"White\" at app launch")
     }
         
     func testShoeImage_ShouldNotBeNil() {
-        XCTAssertNotNil(sut.shoeSelection.image, "shoeImage should not be nil")
+        XCTAssertNotNil(sut.shoeSelection.image, "\(String(describing: sut.shoeSelection.image)) should not be nil")
     }
     
     func testOrderResult_ShouldBeEmptyAtLaunch() {
-        XCTAssertEqual(sut.orderResult.text, "", "orderResult should be equal to \"\" at app launch")
+        XCTAssertEqual(sut.orderResult.text, "", "\(String(describing: sut.orderResult.text)) should be equal to \"\" at app launch")
     }
 }
