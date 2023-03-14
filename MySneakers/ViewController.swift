@@ -42,6 +42,9 @@ class ViewController: UIViewController {
         
         nameTF.delegate = self // Allows nameTF to have textFieldDelegate as an extension
         
+//        Set base value for sizeStepper
+        sizeStepper.value = 40
+        
 //        Sets the first UI's display
         showSizeValue()
         showGenderLabel()
