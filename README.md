@@ -19,12 +19,14 @@
 - SegmentedControl
 - TextField
 - XCTestCase
+- Unit tests
+- UI tests
 
 ## Current state :
 - The app is developped and usable (as shown in the screenshot below👇).
 
 ## Next steps :
-- I am working on including Unit Tests, using XCTestCase tools.
+- I am working on including Unit Tests & UI tests, using XCTestCase tools.
 
 ## Here the screenshot of my app ⤵️
 
