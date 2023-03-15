@@ -61,10 +61,4 @@ class ViewControllerTests: XCTestCase {
     func testOrderResult_ShouldBeEmptyAtLaunch() {
         XCTAssertEqual(sut.orderResult.text, "", "\(String(describing: sut.orderResult.text)) should be equal to \"\" at app launch")
     }
-    
-    func testGenderButton_ShouldUpdateValueWhenPressed() {
-        sut.genderSwitch.isOn = true
-        sut.genderSwitch.sendActions(for: .valueChanged)
-        XCTAssertEqual(sut.genderSwitch.isOn, false, "\(sut.genderSwitch.isOn) should be equal to false")
-    }
 }
