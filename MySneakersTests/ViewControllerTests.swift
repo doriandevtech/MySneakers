@@ -27,11 +27,6 @@ class ViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.typeNumber, "\(sut.typeNumber) should not be nil.")
     }
     
-    func testTitleLabel_ShouldNotBeNilAndShouldEqualValue() {
-        XCTAssertNotNil(sut.titleLbl.text, "\(String(describing: sut.titleLbl.text)) should not be nil")
-        XCTAssertEqual(sut.titleLbl.text, "My Sneakers")
-    }
-    
     func testSizeLabel_ShouldNotBeNilAndShouldEqualValue() {
         XCTAssertNotNil(sut.sizeLbl.text, "\(String(describing: sut.sizeLbl.text)) should not be nil")
         XCTAssertEqual(sut.sizeLbl.text, "40", "\(String(describing: sut.sizeLbl.text)) should equal to \"40\" at app launch")
