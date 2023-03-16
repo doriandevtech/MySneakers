@@ -13,10 +13,20 @@
 		F41BFFBB29B3562800C87D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41BFFB929B3562800C87D24 /* Main.storyboard */; };
 		F41BFFBD29B3562900C87D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41BFFBC29B3562900C87D24 /* Assets.xcassets */; };
 		F41BFFC029B3562900C87D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41BFFBE29B3562900C87D24 /* LaunchScreen.storyboard */; };
+		F42DCFB229C3C7B30019E552 /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCFB129C3C7B30019E552 /* ViewControllerUITests.swift */; };
+		F42DCFBA29C3C9180019E552 /* MySneakersUITests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCFB929C3C9180019E552 /* MySneakersUITests2.swift */; };
+		F42DCFBC29C3C9180019E552 /* MySneakersUITests2LaunchTests in Sources */ = {isa = PBXBuildFile; fileRef = F42DCFBB29C3C9180019E552 /* MySneakersUITests2LaunchTests */; };
 		F42F934C29B7B6B400486A24 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F934B29B7B6B400486A24 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F42DCFBD29C3C9180019E552 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F41BFFA829B3562800C87D24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F41BFFAF29B3562800C87D24;
+			remoteInfo = MySneakers;
+		};
 		F42F932A29B77BFD00486A24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F41BFFA829B3562800C87D24 /* Project object */;
@@ -42,6 +52,10 @@
 		F41BFFBC29B3562900C87D24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F41BFFBF29B3562900C87D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F41BFFC129B3562900C87D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42DCFB129C3C7B30019E552 /* ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
+		F42DCFB729C3C9180019E552 /* MySneakersUITests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySneakersUITests2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42DCFB929C3C9180019E552 /* MySneakersUITests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySneakersUITests2.swift; sourceTree = "<group>"; };
+		F42DCFBB29C3C9180019E552 /* MySneakersUITests2LaunchTests */ = {isa = PBXFileReference; lastKnownFileType = text; path = MySneakersUITests2LaunchTests; sourceTree = "<group>"; };
 		F42F932429B77BFD00486A24 /* MySneakersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySneakersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42F934229B7B67F00486A24 /* MySneakersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySneakersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42F934B29B7B6B400486A24 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
@@ -50,6 +64,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		F41BFFAD29B3562800C87D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42DCFB429C3C9180019E552 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,6 +100,8 @@
 				F4B915F329B69DA500D448EB /* README.md */,
 				F41BFFB229B3562800C87D24 /* MySneakers */,
 				F42F934329B7B67F00486A24 /* MySneakersTests */,
+				F42DCFAD29C3C7590019E552 /* MySneakersUITests */,
+				F42DCFB829C3C9180019E552 /* MySneakersUITests2 */,
 				F41BFFB129B3562800C87D24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +112,7 @@
 				F41BFFB029B3562800C87D24 /* MySneakers.app */,
 				F42F932429B77BFD00486A24 /* MySneakersUITests.xctest */,
 				F42F934229B7B67F00486A24 /* MySneakersTests.xctest */,
+				F42DCFB729C3C9180019E552 /* MySneakersUITests2.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +129,23 @@
 				F41BFFC129B3562900C87D24 /* Info.plist */,
 			);
 			path = MySneakers;
+			sourceTree = "<group>";
+		};
+		F42DCFAD29C3C7590019E552 /* MySneakersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F42DCFB129C3C7B30019E552 /* ViewControllerUITests.swift */,
+			);
+			path = MySneakersUITests;
+			sourceTree = "<group>";
+		};
+		F42DCFB829C3C9180019E552 /* MySneakersUITests2 */ = {
+			isa = PBXGroup;
+			children = (
+				F42DCFB929C3C9180019E552 /* MySneakersUITests2.swift */,
+				F42DCFBB29C3C9180019E552 /* MySneakersUITests2LaunchTests */,
+			);
+			path = MySneakersUITests2;
 			sourceTree = "<group>";
 		};
 		F42F934329B7B67F00486A24 /* MySneakersTests */ = {
@@ -134,6 +175,24 @@
 			productName = MySneakers;
 			productReference = F41BFFB029B3562800C87D24 /* MySneakers.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F42DCFB629C3C9180019E552 /* MySneakersUITests2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42DCFBF29C3C9180019E552 /* Build configuration list for PBXNativeTarget "MySneakersUITests2" */;
+			buildPhases = (
+				F42DCFB329C3C9180019E552 /* Sources */,
+				F42DCFB429C3C9180019E552 /* Frameworks */,
+				F42DCFB529C3C9180019E552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42DCFBE29C3C9180019E552 /* PBXTargetDependency */,
+			);
+			name = MySneakersUITests2;
+			productName = MySneakersUITests2;
+			productReference = F42DCFB729C3C9180019E552 /* MySneakersUITests2.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		F42F932329B77BFD00486A24 /* MySneakersUITests */ = {
 			isa = PBXNativeTarget;
@@ -184,8 +243,13 @@
 					F41BFFAF29B3562800C87D24 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					F42DCFB629C3C9180019E552 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F41BFFAF29B3562800C87D24;
+					};
 					F42F932329B77BFD00486A24 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = F41BFFAF29B3562800C87D24;
 					};
 					F42F934129B7B67F00486A24 = {
@@ -210,6 +274,7 @@
 				F41BFFAF29B3562800C87D24 /* MySneakers */,
 				F42F932329B77BFD00486A24 /* MySneakersUITests */,
 				F42F934129B7B67F00486A24 /* MySneakersTests */,
+				F42DCFB629C3C9180019E552 /* MySneakersUITests2 */,
 			);
 		};
 /* End PBXProject section */
@@ -222,6 +287,13 @@
 				F41BFFC029B3562900C87D24 /* LaunchScreen.storyboard in Resources */,
 				F41BFFBD29B3562900C87D24 /* Assets.xcassets in Resources */,
 				F41BFFBB29B3562800C87D24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42DCFB529C3C9180019E552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +324,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F42DCFB329C3C9180019E552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42DCFBA29C3C9180019E552 /* MySneakersUITests2.swift in Sources */,
+				F42DCFBC29C3C9180019E552 /* MySneakersUITests2LaunchTests in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F42F932029B77BFD00486A24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42DCFB229C3C7B30019E552 /* ViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +352,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F42DCFBE29C3C9180019E552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F41BFFAF29B3562800C87D24 /* MySneakers */;
+			targetProxy = F42DCFBD29C3C9180019E552 /* PBXContainerItemProxy */;
+		};
 		F42F932B29B77BFD00486A24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F41BFFAF29B3562800C87D24 /* MySneakers */;
@@ -472,7 +559,7 @@
 			};
 			name = Release;
 		};
-		F42F932D29B77BFD00486A24 /* Debug */ = {
+		F42DCFC029C3C9180019E552 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -480,9 +567,51 @@
 				DEVELOPMENT_TEAM = 56AB9A2723;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyXcodeProjects.MySneakersUITests2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySneakers;
+			};
+			name = Debug;
+		};
+		F42DCFC129C3C9180019E552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56AB9A2723;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyXcodeProjects.MySneakersUITests2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySneakers;
+			};
+			name = Release;
+		};
+		F42F932D29B77BFD00486A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56AB9A2723;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyXcodeProjects.MySneakersUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "MySneakersUITests/MySneakersUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MySneakers;
@@ -492,14 +621,21 @@
 		F42F932E29B77BFD00486A24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56AB9A2723;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyXcodeProjects.MySneakersUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "MySneakersUITests/MySneakersUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MySneakers;
@@ -559,6 +695,15 @@
 			buildConfigurations = (
 				F41BFFC529B3562900C87D24 /* Debug */,
 				F41BFFC629B3562900C87D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42DCFBF29C3C9180019E552 /* Build configuration list for PBXNativeTarget "MySneakersUITests2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42DCFC029C3C9180019E552 /* Debug */,
+				F42DCFC129C3C9180019E552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
