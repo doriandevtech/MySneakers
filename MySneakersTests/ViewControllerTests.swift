@@ -13,7 +13,6 @@ class ViewControllerTests: XCTestCase {
     var sut: ViewController!
     
     override func setUpWithError() throws {
-        super.setUp()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         sut = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
         sut.loadViewIfNeeded()
@@ -21,7 +20,6 @@ class ViewControllerTests: XCTestCase {
     
     override func tearDownWithError() throws {
         sut = nil
-        super.tearDown()
     }
     
     func testInit_AreValuesInitiallyNotNil() {
