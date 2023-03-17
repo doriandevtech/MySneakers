@@ -22,7 +22,7 @@ class ViewControllerTests: XCTestCase {
         sut = nil
     }
     
-    func testInit_AreValuesInitiallyNotNil() {
+    func testInit_AreValuesInitiallyNotNil() async {
         XCTAssertNotNil(sut.name, "Name should not be nil.")
         XCTAssertNotNil(sut.typeNumber, "\(sut.typeNumber) should not be nil.")
     }
