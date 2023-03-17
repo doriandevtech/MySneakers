@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class MySneakersUITests2: XCTestCase {
+final class ViewControllerUITests2: XCTestCase {
 
     var app: XCUIApplication!
 
@@ -20,7 +20,8 @@ final class MySneakersUITests2: XCTestCase {
     override func tearDownWithError() throws {
         app = nil
     }
-
+    
+    ///  Function tests the presence of the app's "MySneakers" title in the view
     func testTitleLabel() {
         app.launch()
         XCTAssertTrue(app.staticTexts["My Sneakers"].exists)
