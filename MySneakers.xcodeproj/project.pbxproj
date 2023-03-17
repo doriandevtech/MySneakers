@@ -13,8 +13,8 @@
 		F41BFFBB29B3562800C87D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41BFFB929B3562800C87D24 /* Main.storyboard */; };
 		F41BFFBD29B3562900C87D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41BFFBC29B3562900C87D24 /* Assets.xcassets */; };
 		F41BFFC029B3562900C87D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41BFFBE29B3562900C87D24 /* LaunchScreen.storyboard */; };
-		F42DCFBA29C3C9180019E552 /* MySneakersUITests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCFB929C3C9180019E552 /* MySneakersUITests2.swift */; };
-		F42DCFBC29C3C9180019E552 /* MySneakersUITests2LaunchTests in Sources */ = {isa = PBXBuildFile; fileRef = F42DCFBB29C3C9180019E552 /* MySneakersUITests2LaunchTests */; };
+		F42DCFBA29C3C9180019E552 /* ViewControllerUITests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCFB929C3C9180019E552 /* ViewControllerUITests2.swift */; };
+		F42DCFBC29C3C9180019E552 /* ViewControllerUITests2LaunchTests in Sources */ = {isa = PBXBuildFile; fileRef = F42DCFBB29C3C9180019E552 /* ViewControllerUITests2LaunchTests */; };
 		F42F934C29B7B6B400486A24 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F934B29B7B6B400486A24 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,8 @@
 		F41BFFBF29B3562900C87D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F41BFFC129B3562900C87D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F42DCFB729C3C9180019E552 /* MySneakersUITests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySneakersUITests2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F42DCFB929C3C9180019E552 /* MySneakersUITests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySneakersUITests2.swift; sourceTree = "<group>"; };
-		F42DCFBB29C3C9180019E552 /* MySneakersUITests2LaunchTests */ = {isa = PBXFileReference; lastKnownFileType = text; path = MySneakersUITests2LaunchTests; sourceTree = "<group>"; };
+		F42DCFB929C3C9180019E552 /* ViewControllerUITests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests2.swift; sourceTree = "<group>"; };
+		F42DCFBB29C3C9180019E552 /* ViewControllerUITests2LaunchTests */ = {isa = PBXFileReference; lastKnownFileType = text; path = ViewControllerUITests2LaunchTests; sourceTree = "<group>"; };
 		F42F932429B77BFD00486A24 /* MySneakersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySneakersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42F934229B7B67F00486A24 /* MySneakersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySneakersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42F934B29B7B6B400486A24 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 		F42DCFB829C3C9180019E552 /* MySneakersUITests2 */ = {
 			isa = PBXGroup;
 			children = (
-				F42DCFB929C3C9180019E552 /* MySneakersUITests2.swift */,
-				F42DCFBB29C3C9180019E552 /* MySneakersUITests2LaunchTests */,
+				F42DCFB929C3C9180019E552 /* ViewControllerUITests2.swift */,
+				F42DCFBB29C3C9180019E552 /* ViewControllerUITests2LaunchTests */,
 			);
 			path = MySneakersUITests2;
 			sourceTree = "<group>";
@@ -317,8 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42DCFBA29C3C9180019E552 /* MySneakersUITests2.swift in Sources */,
-				F42DCFBC29C3C9180019E552 /* MySneakersUITests2LaunchTests in Sources */,
+				F42DCFBA29C3C9180019E552 /* ViewControllerUITests2.swift in Sources */,
+				F42DCFBC29C3C9180019E552 /* ViewControllerUITests2LaunchTests in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
