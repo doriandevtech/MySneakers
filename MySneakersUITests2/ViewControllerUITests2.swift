@@ -27,6 +27,7 @@ final class ViewControllerUITests2: XCTestCase {
         XCTAssertTrue(app.staticTexts["My Sneakers"].exists)
     }
     
+    /// Function tests the value of the "name" textField object when an input is given
     func testNameTextField_WhenGivenName_FillsTextField() {
         app.launch()
         
