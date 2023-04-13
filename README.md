@@ -28,7 +28,7 @@
 ## Next steps :
 - I am working on including Unit Tests & UI tests, using XCTestCase tools.
 
-## Here the screenshot of my app ⤵️
+## Here are some screenshots of my app ⤵️
 
 ### Home Page view:
 
